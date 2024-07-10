@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "twitter-blue": '#1DA1F2',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <div class="container min-h-screen bg-[url('images/Image.png')] bg-center	bg-cover px-28 py-5 relative	">
+        <nav class="flex items-center">
+            <img src="images/logo.png" alt="logo-image" class="w-40 cursor-pointer">
+            <ul class="flex-1 text-center text-white">
+                <li class="list-none inline-block px-5"><a href="#">Home</a></li>
+                <li class="list-none inline-block px-5"><a href="#">About</a></li>
+                <li class="list-none inline-block px-5"><a href="#">Features</a></li>
+                <li class="list-none inline-block px-5"><a href="#">Contact</a></li>
+            </ul>
+            <img src="images/cart.png" class="w-8 cursor-pointer">
+        </nav>
+
+        <div class="text-white mt-48 max-w-lg leading-normal">
+          <h1 class="text-6xl font-semibold	">Font Weight</h1>
+          <p>In this video we will learn to make a website header section step by 
+            step using HTML and TailwindCSS. 
+            In this website design we will not write any CSS properties,
+            We will install Tailwind CSS and use their classes in the HTML file to design our website. After watching this tutorial you will be able to design any website without writing any CSS properties, you can make it with HTML and Tailwind CSS framework. 
+          </p>
+          <div class="mt-10">
+            <a href="#" class="bg-yellow-300 rounded-3xl px-8 py-3 font-medium inline-block mr-4 hover:bg-transparent border border-transparent hover:border hover:border-yellow-300 duration-300">Order Now</a>
+            <a href="#">Download App <span class="text-lg inline-block rotate-90">&#10148</span></a>
+          </div>
+        </div>
+
+        <img src="images/grocery-image.png" class="w-full xl:w-1/2 xl:absolute bottom-0 right-0">
+
+    </div>
+</body>
+</html>
